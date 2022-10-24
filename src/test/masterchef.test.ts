@@ -1,5 +1,5 @@
 import SDK, { NetworkType } from '../main'
-const coinType = '0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::LPCoinV1::LPCoin<0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC, 0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::USDT>>'
+const coinType = '0xe73ee18380b91e37906a728540d2c8ac7848231a26b99ee5631351b3543d7cf2::LPCoinV1::LPCoin<0x801ccf2187d7c75da60294212613a29ea90d37abc5c98feefffcbcf87739ae57::TestCoinsV1::BTC, 0x801ccf2187d7c75da60294212613a29ea90d37abc5c98feefffcbcf87739ae57::TestCoinsV1::USDT>>'
 
 describe('Swap Module', () => {
   const sdk = new SDK('https://fullnode.devnet.aptoslabs.com', NetworkType.Devnet)

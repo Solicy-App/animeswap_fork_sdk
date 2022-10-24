@@ -2,7 +2,7 @@ import SDK, { NetworkType } from '../main'
 
 const CoinsMapping: { [key: string]: string } = {
   APTOS: '0x1::aptos_coin::AptosCoin',
-  BTC: '0x16fe2df00ea7dde4a63409201f7f4e536bde7bb7335526a35d05111e68aa322c::TestCoinsV1::BTC',
+  BTC: '0x801ccf2187d7c75da60294212613a29ea90d37abc5c98feefffcbcf87739ae57::TestCoinsV1::BTC',
 }
 
 describe('Route Module', () => {

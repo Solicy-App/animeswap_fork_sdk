@@ -4,7 +4,7 @@ import { NetworkType, SDK } from './sdk'
 import { AptosEvent } from './types/aptos'
 import { d, notEmpty } from './utils'
 
-const sdk = new SDK('https://fullnode.mainnet.aptoslabs.com', NetworkType.Mainnet)
+const sdk = new SDK('https://fullnode.mainnet.aptoslabs.com', NetworkType.Devnet)
 // const sdk = new SDK('https://fullnode.testnet.aptoslabs.com', NetworkType.Testnet)
 
 const coin2Reserve: { [key: string]: Decimal } = {}
@@ -65,9 +65,9 @@ export async function getCoinPairSwapEvents(coinPair: CoinPair, startVersion: st
         },
     }
     let events = await sdk.swap.getEvents(eventParams)
-    allEvents.push(...events.filter(v => d(v.version).gt(d(startVersion)))) 
+    allEvents.push(...events.filter(v => d(v.version).gt(d(startVersion))))
     console.log(allEvents.length)
-    while (d(events[0].sequence_number).gt(0) 
+    while (d(events[0].sequence_number).gt(0)
         && d(events[0].version).gt(d(startVersion))) {
         // the api is strange, cannot use reverse start, so we do it like this
         // you can only give the start sequence_number, so the next batch start should be `Max(events[0].sequence_number - batchSize, 0)`
