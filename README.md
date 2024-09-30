@@ -10,6 +10,9 @@ The typescript SDK for [AnimeSwap](https://animeswap.org) v1 protocol.
 * [SDK documents](https://docs.animeswap.org/docs/sdk)
 * [Contracts documents](https://docs.animeswap.org/docs/contracts)
 
+## About
+This project is maintained by [Solicy Software and Blockchain Company](https://solicy.net/?utm_source=github&utm_medium=social)
+
 # Installation
 
     yarn add "@animeswap.org/v1-sdk"
